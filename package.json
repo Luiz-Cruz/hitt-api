@@ -1,0 +1,18 @@
+{
+  "name": "hitt-api",
+  "version": "1.0.0",
+  "description": "Backend API of HITT app",
+  "main": "index.js",
+  "scripts": {
+    "dev": "nodemon server.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.19.2"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.4"
+  }
+}
