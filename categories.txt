@@ -1,0 +1,5 @@
+1 - Mapear /categories no server.js
+2 - Criar a rota na pasta routes
+3 - Criar o controller na pasta controller
+4 - Criar a service na pasta service
+5 - Retornar o seguinte array de categorias:
