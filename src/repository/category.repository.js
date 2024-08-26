@@ -4,5 +4,6 @@ const categories = [
     "VISITANTE"
 ];
 
-
-
+export function fetchAllCategories() {
+    return categories;
+  }

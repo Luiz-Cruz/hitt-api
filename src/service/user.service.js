@@ -1,10 +1,6 @@
-// regras de negocio e validações
-const userRepository = require('../repository/user.repository');
+import { fetchAllUsers } from '../repository/index.js';
 
-
-function getAll(){
-    const users = userRepository.getAll();
+export function getAllUsers() {
+    const users = fetchAllUsers();
     return users;
-};
-
-module.exports = { getAll};
+}

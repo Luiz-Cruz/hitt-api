@@ -1,13 +1,6 @@
-// controlador da suas requisições
+import { getAllUsers } from '../service/index.js';
 
-// recebe a request
-// processa
-// devolve a response com status code
-const userService = require('../service/user.service');
-
-function getAll(req, res) {
-    const users = userService.getAll();
+export function handleGetAllUsers(req, res) {
+    const users = getAllUsers();
     return res.status(201).json(users);
-};
-
-module.exports = {getAll}
+}

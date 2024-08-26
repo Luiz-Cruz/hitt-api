@@ -1,6 +1,7 @@
 {
   "name": "hitt-api",
   "version": "1.0.0",
+  "type": "module",
   "description": "Backend API of HITT app",
   "main": "index.js",
   "scripts": {
