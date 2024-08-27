@@ -8,6 +8,10 @@ app.use(json());
 app.use('/user', userRouter);
 app.use('/category', categoryRouter);
 
+app.get('/ping', (req, res) => {
+    res.send('pong');
+});
+
 app.listen(port, () => {
     console.log(`App listening on port ${port}`);
 });

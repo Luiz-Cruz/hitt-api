@@ -1,6 +1,11 @@
 import { getAllUsers } from '../service/index.js';
+import { statusCodes } from '../utils/http.js'
 
-export function handleGetAllUsers(req, res) {
-    const users = getAllUsers();
-    return res.status(201).json(users);
-}
+export async function handleGetAllUsers(req, res) {
+    const users = await getAllUsers();
+    return res.status(statusCodes.OK).json(users);
+};
+
+export function handleCreateUser(req, res){
+    return res.status(statusCodes.CREATED).json(req.body);
+};

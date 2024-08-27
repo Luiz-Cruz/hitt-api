@@ -1,18 +1,7 @@
-const users = [
-  {
-    "type": "STARTUP", // STARTUP | PARCEIRO | VISITANTE
-    "register_code": "123456", // opcional
-    "full_name": "Luizin",
-    "email": "luizin@email.com",
-    "phone": "(12) ",
-    "tax_id": "",
-    "birthday": "1996-08-15",
-    "genre": "", // MASCULINO | FEMININO | NAO_INFORMAR
-    "where_from": "", // SITE | WHATSAPP | AMIGO.....
-    "newsletter": false
-  }
-];
+import { AppDataSource } from '../database/data-source.js';
+import { UserDatabase } from '../database/entity/index.js';
 
-export function fetchAllUsers() {
-  return users;
+export async function fetchAllUsers() {
+  const userRepository = AppDataSource.getRepository(UserDatabase);
+  return await userRepository.find();
 }

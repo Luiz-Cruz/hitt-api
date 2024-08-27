@@ -1,6 +1,6 @@
 import { fetchAllUsers } from '../repository/index.js';
 
-export function getAllUsers() {
-    const users = fetchAllUsers();
+export async function getAllUsers() {
+    const users = await fetchAllUsers();
     return users;
 }
